@@ -14,11 +14,32 @@ In the Chrome dev tools, on the right hand side of the sources tab, there is a "
 **An exception is an error that occurs in your program. Caught exceptions are errors that are evaluated in a try/catch block** <br>
 How do we "catch" errors in JavaScript? Give an example with code for what that might look like. <br>
 
-       ~~~ruby
+       ```ruby
        try {
 
 }
 catch {
   console.log(that is okay not error)  
-}
-~~~
+   ```
+
+
+ ### Part I
+ 1.person; ReferenceError becuase we are accessing a variable that has not been defined <br>
+ 2. ``` var data = {};
+        data.displayInfo()```
+
+ Type of error , The value of data.displayInfo is undefined, so we are invoking undefined which we can not do. Undefined is not a function<br>
+ 3. ``` var data = {};
+     data.displayInfo.foo = "bar";```
+
+ TypeError We are trying to assign a property of foo on undefined. Undefined is not an object so we can not do that.  <br>
+
+ 4. ```function data(){
+    var thing = "foo";
+          }
+              data();
+             thing;```
+ ReferenceError  The thing variable is only available in the scope of the data function. We are trying to access it out of scope and JavaScript does not have a reference to it   <br>           
+
+     
+
