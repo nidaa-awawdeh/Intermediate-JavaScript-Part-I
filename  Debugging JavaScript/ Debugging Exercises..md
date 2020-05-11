@@ -12,12 +12,12 @@ In the Chrome dev tools, on the right hand side of the sources tab, there is a "
 **An exception is an error that occurs in your program. Caught exceptions are errors that are evaluated in a try/catch block** <br>
 How do we "catch" errors in JavaScript? Give an example with code for what that might look like. <br>
 
-    ```ruby
+```ruby
        try {
   }
 catch {
 console.log(that is okay not error)
-    ```
+```
 
 
 ### Part I
